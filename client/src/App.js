@@ -17,7 +17,7 @@ function App() {
       const response = await fetch("/menu/appetizer", {
         method: "POST",
         headers: {
-          'Content-Type': 'application.json'
+          'Content-Type': 'application/json'
         }
       });
   

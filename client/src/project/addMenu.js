@@ -7,7 +7,7 @@ export default function AddMenu() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/add/dessert", {
+    const response = await fetch("/add/dessert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

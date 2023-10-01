@@ -6,7 +6,7 @@ const connectToMongoDB = require("./db")
 const path = require('path')
 
 
-connectToMongoDB()
+
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
 // })
@@ -15,12 +15,14 @@ app.use(express.json());
 app.use('/menu', require('./displaydata'));
 app.use('/add', require('./addFood'));
 
-app.use(express.static(path.join(__dirname,"./client/build")));
+app.use(express.static(path.join(__dirname,'./client/build')));
 app.get('*', function(_,res){
   res.sendFile(path.join(__dirname,'./client/build/index.html'), function(err){
     res.status(500).send(err);
+    console.log(err)
   })
 })
+connectToMongoDB()
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

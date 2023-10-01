@@ -6,9 +6,6 @@ import Contact from "./project/contact.js";
 import Reservation from "./project/reservation.js";
 import Menu from "./project/menu";
 import AddMenu from "./project/addMenu";
-import dotenv from 'dotenv';
-
-dotenv.config()
 
 function App() {
 
@@ -17,7 +14,7 @@ function App() {
 
   const loaddata = async () => {
     try {
-      const response = await fetch(`${process.env.BASE_URL}/menu/appetizer`, {
+      const response = await fetch("/menu/appetizer", {
         method: "POST",
         headers: {
           'Content-Type': 'application.json'

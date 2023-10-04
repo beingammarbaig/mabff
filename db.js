@@ -13,7 +13,7 @@ const connectToMongoDB = async () => {
 
     // Specify the database name and collection name
     const db = mongoose.connection.db;
-    const collection = db.collection("desserts");
+    const collection = db.collection("menus");
 
     // Retrieve data from the "appetizer" collection
     const data = await collection.find({}).toArray();

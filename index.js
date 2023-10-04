@@ -14,6 +14,8 @@ app.use(cors());
 app.use(express.json());
 app.use('/menu', require('./displaydata'));
 app.use('/add', require('./addFood'));
+app.use('/add', require('./addContact'));
+app.use('/add', require('./addReservation'));
 
 app.use(express.static(path.join(__dirname,'./client/build')));
 app.get('*', function(_,res){

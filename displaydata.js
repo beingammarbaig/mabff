@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/appetizer',(req, res)=>{
+router.post('/food',(req, res)=>{
     console.log("s")
     try {
         res.send([global.menu])

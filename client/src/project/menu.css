@@ -9,14 +9,52 @@ body {
     background-color: #ff0000;
     color: #000;
 }
-.homemenu-item {
-    background-color: #333;
+h2{
+    font-family: Pacifico;
+    font-size: 35px; /* Adjust the font size as needed */
+            font-weight: bold;
+            text-align: left;
+
+}
+.x{
+    display: flex;
+  flex-direction: column;
+}
+.x section{
+    flex: 1; /* Distribute available space evenly */
+}
+.menu-item {
+    background-color:#000;
     color: #ff0000;
 }
-.homecard{
-    background-color: #000;
+section{
+    border-radius: 50px;
 }
-
+.category{
+    
+    border-radius: 50px;
+}
+.card{
+    background-color: #fff;
+    color: #000;
+    border-width: 10px;
+    border-color: #000;
+    border-radius: 60px;
+    
+}
+.cit{
+    border-radius: 50px;
+    margin-bottom: -10px;
+}
+.card-text{
+    margin-top: -15px;
+}
+.card-text strong{
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+    padding: 0px 10px;
+}
 .footer {
     background-color: rgb(27, 25, 25);
     color:  #ff0000;
@@ -60,17 +98,10 @@ body {
     font-weight: bold; /* Change font-weight if needed */
     color: #0073e6; /* Change link color */
 }
-.logo{
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    width: 100%;
-}
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     /* Your styles for screens with a width less than 768px go here */
-    .logo{
-        width: 200px;
-        height:200px;
+    h2{
+        margin-top: 5px;
+        font-size: 20px;
     }
   }
-
- 

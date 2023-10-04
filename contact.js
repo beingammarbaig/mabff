@@ -5,18 +5,14 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    url:{
+    email:{
         type: String,
         required: true
     },
-    desc:{
-        type: String,
-        required: true
-    },
-    price:{
+    msg:{
         type: String,
         required: true
     }
 })
 
-module.exports = mongoose.model('Dessert',UserSchema)
+module.exports = mongoose.model('Contact',UserSchema)

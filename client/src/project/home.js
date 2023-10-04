@@ -8,98 +8,9 @@ Modal.setAppElement('#root');
 export default function Home() {
 
 
-  const [showModal, setShowModal] = useState(true); // Set to true to show the modal initially
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "Registration",
-    msg:"Registration"
-  });
-
-  
-  const handleInputChange = (e) => {
-    
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch("/add/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        msg: formData.msg,
-      }),
-    });
-    const json = await response.json();
-    console.log(json);
-
-    // Here, you can send the formData to your server for registration.
-    // You should implement the server-side code for handling the registration.
-
-    // After successful registration, you can close the modal and reset the form.
-    setShowModal(false);
-    setFormData({
-      name: "",
-      email: "Registration",
-      msg:"Registration"
-    });
-  };
-
-  const loaddata = async () => {
-    setShowModal(true);
-  }
-
-  useEffect(() => {
-    // You can add logic here to conditionally show the modal on page load.
-    // For example, you can check if the user is logged in or if they have already registered.
-    // If you want to show the modal unconditionally, you can remove this useEffect block.
-
-  }, []);
-
 
   return (
     <>
-    <Modal
-        isOpen={showModal}
-        contentLabel="Form Submission Modal"
-      >
-        <div className="">
-          <div className="">
-            <div className="container">
-              <div className="">
-                <h2 className="text-dark mb-5">User Registration</h2>
-                
-              </div>
-              <div className="">
-                <form className="content-align-center" onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <label className="text-dark" htmlFor="name">
-                      <strong>Name:</strong>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="form-control"
-                    />
-                  </div>
-                  <br/>
-                  <button
-                  type="button"
-                  className="bg-primary"
-                  onClick={handleSubmit}
-                >
-                  Submit
-                </button>
-                  </form></div></div></div></div>
-      </Modal>
     <div style={{homeCSS}}>
       
       <nav className="navbar navbar-expand-lg navbar-dark">

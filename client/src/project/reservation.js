@@ -191,13 +191,13 @@ export default function Reservation() {
               MAB's Fast Food- Maskan Branch, Shop K3 Plot# FL#5 Block 4 Regency
               Apartment, Gulshan E Iqbal Maskan (Old Bhayani), Karachi
             </p>
-            <a href="privacy-policy.html" className="px-2">
+            <a href="" className="px-2">
               Privacy Policy
             </a>
-            <a href="terms-of-use.html" className="px-2">
+            <a href="" className="px-2">
               Terms of Use
             </a>
-            <a href="faqs.html" className="px-2">
+            <a href="" className="px-2">
               FAQs
             </a>
           </div>
@@ -205,11 +205,11 @@ export default function Reservation() {
             <br/>
             <h4>Download Our App</h4>
 
-            <a href="your_google_play_link" class="download-button text-center">
+            <a href="https://play.google.com/store/games?hl=en&gl=US" class="download-button text-center">
               <img src="https://www.nicepng.com/png/detail/435-4350523_get-it-on-google-play-google-play.png" />
             </a>
 
-            <a href="your_apple_store_link" class="download-button">
+            <a href="https://www.apple.com/app-store/" class="download-button">
               <img
                 src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg"
                 style={{ height: "60px" }}

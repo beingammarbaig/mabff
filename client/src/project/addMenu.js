@@ -62,9 +62,9 @@ export default function AddMenu() {
               value={menu.category}
               className="form-control" id="category">
                 <option>Select</option>
-            <option value="appetizer">Appetizer</option>
-            <option value="main_course">Main Course</option>
-            <option value="dessert">Dessert</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Main Course">Main Course</option>
+            <option value="Dessert">Dessert</option>
         </select>
           </div>
 

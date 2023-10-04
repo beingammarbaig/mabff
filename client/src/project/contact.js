@@ -30,7 +30,7 @@ export default function Contact() {
     setTimeout(() => {
       window.location.reload();
       window.scrollTo(0, 0);
-    }, 5000); // Adjust the delay as needed
+    }, 1000); // Adjust the delay as needed
   }};
 
   const handleCloseModal = () => {
